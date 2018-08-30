@@ -65,8 +65,12 @@ end
 
 wrap_text("I like cheese", "++++")
 
-def distanceran(person,distance,minutes)
+def distance_ran(person,distance,minutes,seconds)
     puts "how far did #{person} run in meters"
+    distance = gets.to_f
+    puts "How long (in minutes) did #{person} run take to run #{distance1} metres?"
+    mins = gets.to_f
+
 end
 
 
@@ -79,7 +83,3 @@ mins1 = gets.to_f
 
 secs1 = mins1 * 60
 speed1 = distance1/secs1
-secs2 = mins2 * 60
-speed2 = distance2/secs2
-secs3 = mins3 * 60
-speed3 = distance3/secs3
