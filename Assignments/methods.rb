@@ -60,6 +60,9 @@ farenheittocel(100)
 def wrap_text(text,symbol)
 
 puts "#{symbol}#{text}#{symbol}"
+#if we wanted it to wrap on multiple lines and look like a
+#moving LED we might loop through and move the last symbol to the beginning ,
+#and then call the method recursivley.
 
 end
 
@@ -83,3 +86,15 @@ mins1 = gets.to_f
 
 secs1 = mins1 * 60
 speed1 = distance1/secs1
+
+if speed3 > speed2 && speed3 > speed1
+    puts "Person 3 was the fastest at #{speed3} m/s"
+  elsif speed2 > speed3 && speed2 > speed1
+    puts "Person 2 was the fastest at #{speed2} m/s"
+  elsif speed1 > speed3 && speed1 > speed2
+    puts "Person 1 was the fastest at #{speed1} m/s"
+  elsif speed1 == speed2 && speed2 == speed3
+    puts "Everyone tied at #{speed1} m/s"
+  else
+    puts "Well done everyone!"
+  end
